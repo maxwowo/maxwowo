@@ -1,0 +1,14 @@
+.Icon {
+  font-size: 3rem;
+  margin: 1.5rem;
+  transition: 0.2s;
+}
+
+.Icon:hover {
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  transform: scale(1.5);
+  cursor: pointer;
+}
