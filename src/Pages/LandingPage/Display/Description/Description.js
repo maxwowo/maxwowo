@@ -6,7 +6,7 @@ const Description = () => (
   <p
     className={styles.Description}
   >
-    Code Monkey | Software Engineering @ UNSW | Hmu for karaoke
+    Software Engineering student @ UNSW
   </p>
 );
 
