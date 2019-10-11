@@ -54,3 +54,5 @@ thumb
 sketch
 
 # End of https://www.gitignore.io/api/react,jetbrains
+
+build/

@@ -3,15 +3,6 @@ import ParticlesJs from 'react-particles-js';
 
 const Particles = () => (
   <ParticlesJs
-    params={
-      {
-        particles: {
-          number: {
-            value: 100
-          }
-        }
-      }
-    }
     style={
       {
         position: "absolute",
