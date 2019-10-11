@@ -1,9 +1,13 @@
 import React from 'react';
 
+import styles from './Description.module.css';
+
 const Description = () => (
-  <h2>
+  <p
+    className={styles.Description}
+  >
     Code Monkey | Software Engineering @ UNSW | Hmu if you wanna karaoke
-  </h2>
+  </p>
 );
 
 export default Description;
