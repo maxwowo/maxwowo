@@ -30,6 +30,7 @@ const IconBar = () => (
             window.open(el.url);
           }
         }
+        key={el.url}
       />)
     }
   </Center>
