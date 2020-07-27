@@ -1,4 +1,7 @@
 {
+  "env": {
+    "browser": true
+  },
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
@@ -8,12 +11,6 @@
     "plugin:import/typescript",
     "plugin:prettier/recommended"
   ],
-  "env": {
-    "browser": true
-  },
-  "plugins": [
-    "simple-import-sort"
-  ],
   "parserOptions": {
     "ecmaVersion": 11,
     "sourceType": "module",
@@ -21,6 +18,9 @@
       "jsx": true
     }
   },
+  "plugins": [
+    "simple-import-sort"
+  ],
   "root": true,
   "rules": {
     "curly": "error",
