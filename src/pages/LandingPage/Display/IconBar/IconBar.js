@@ -1,22 +1,22 @@
-import React from "react";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
+import React from 'react';
 
-import Center from "../../../../components/Center/Center";
-import Icon from "../../../../components/Icon/Icon";
+import Center from '../../../../components/Center/Center';
+import Icon from '../../../../components/Icon/Icon';
 
 const icons = [
   {
     icon: faGithub,
-    url: "https://github.com/maxwowo/",
+    url: 'https://github.com/maxwowo/',
   },
   {
     icon: faLinkedin,
-    url: "https://www.linkedin.com/in/maxwo/",
+    url: 'https://www.linkedin.com/in/maxwo/',
   },
   {
     icon: faFilePdf,
-    url: "/resume.pdf",
+    url: '/resume.pdf',
   },
 ];
 

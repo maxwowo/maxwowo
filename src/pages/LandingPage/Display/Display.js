@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
-import Center from "../../../components/Center/Center";
-import Name from "./Name/Name";
-import Description from "./Description/Description";
-import IconBar from "./IconBar/IconBar";
+import Center from '../../../components/Center/Center';
+import Description from './Description/Description';
+import IconBar from './IconBar/IconBar';
+import Name from './Name/Name';
 
 const Display = () => (
   <Center>

@@ -1,7 +1,7 @@
-import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import LandingPage from "./pages/LandingPage/LandingPage";
+import LandingPage from './pages/LandingPage/LandingPage';
 
 const Router = () => (
   <BrowserRouter>
