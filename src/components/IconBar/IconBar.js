@@ -5,14 +5,14 @@ import React from 'react';
 import Center from '../Center/Center';
 import Icon from '../Icon/Icon';
 
-const icons = [
+const iconLinks = [
   {
     icon: faGithub,
-    url: 'https://github.com/maxwowo/',
+    url: 'https://github.com/maxwowo',
   },
   {
     icon: faLinkedin,
-    url: 'https://www.linkedin.com/in/maxwo/',
+    url: 'https://www.linkedin.com/in/maxwo',
   },
   {
     icon: faFilePdf,
@@ -22,13 +22,13 @@ const icons = [
 
 const IconBar = () => (
   <Center>
-    {icons.map((el) => (
+    {iconLinks.map((iconLink) => (
       <Icon
-        icon={el.icon}
+        icon={iconLink.icon}
         onClick={() => {
-          window.open(el.url);
+          window.open(iconLink.url, '_blank');
         }}
-        key={el.url}
+        key={iconLink.url}
       />
     ))}
   </Center>
