@@ -2,8 +2,8 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 
-import Center from '../../../../components/Center/Center';
-import Icon from '../../../../components/Icon/Icon';
+import Center from '../Center/Center';
+import Icon from '../Icon/Icon';
 
 const icons = [
   {

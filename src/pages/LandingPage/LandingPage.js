@@ -1,7 +1,7 @@
 import React from 'react';
 
+import Display from '../../components/Display/Display';
 import Particles from '../../components/Particles/Particles';
-import Display from './Display/Display';
 import styles from './LandingPage.module.css';
 
 const LandingPage = () => (
