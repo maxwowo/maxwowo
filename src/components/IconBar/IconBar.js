@@ -1,5 +1,5 @@
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
+import { faBlog, faFilePdf } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 
 import Center from '../Center/Center';
@@ -13,6 +13,10 @@ const iconLinks = [
   {
     icon: faLinkedin,
     url: 'https://www.linkedin.com/in/maxwo',
+  },
+  {
+    icon: faBlog,
+    url: 'https://street.maxwowo.com/',
   },
   {
     icon: faFilePdf,
