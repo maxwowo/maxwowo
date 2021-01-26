@@ -1,7 +1,7 @@
+import { NextPage } from 'next';
 import Head from 'next/head';
-import { FunctionComponent } from 'react';
 
-const Landing: FunctionComponent = () => (
+const Landing: NextPage = () => (
   <Head>
     <title>¯\_(ツ)_/¯</title>
   </Head>
