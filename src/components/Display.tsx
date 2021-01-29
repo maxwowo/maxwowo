@@ -8,7 +8,7 @@ const Display: FunctionComponent = () => (
       <p className="subpixel-antialiased text-white text-7xl md:text-10xl font-medium">
         Max Wo
       </p>
-      <p className="subpixel-antialiased text-white text-lg md:text-3xl font-light">
+      <p className="subpixel-antialiased text-white text-lg md:text-4xl">
         Software Engineering student @ UNSW
       </p>
     </div>
