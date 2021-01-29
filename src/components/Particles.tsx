@@ -1,8 +1,8 @@
-import React from 'react'
 import ParticlesJs from 'react-particles-js'
 
 const Particles = () => (
   <ParticlesJs
+    canvasClassName="bg-black absolute z-0"
     params={{
       interactivity: {
         events: {
@@ -14,13 +14,9 @@ const Particles = () => (
       },
       particles: {
         number: {
-          value: 100,
+          value: 50,
         },
       },
-    }}
-    style={{
-      backgroundColor: 'black',
-      position: 'absolute',
     }}
   />
 )

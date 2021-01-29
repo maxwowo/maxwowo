@@ -6,7 +6,11 @@ module.exports = {
     '.src/components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontSize: {
+        '10xl': ['11rem', '1.2'],
+      },
+    },
   },
   variants: {
     extend: {},

@@ -2,14 +2,18 @@ import { NextPage } from 'next'
 import Head from 'next/head'
 import { Fragment } from 'react'
 
-import LandingPage from '../components/LandingPage'
+import Display from '../components/Display'
+import Particles from '../components/Particles'
 
 const Landing: NextPage = () => (
   <Fragment>
     <Head>
       <title>¯\_(ツ)_/¯</title>
     </Head>
-    <LandingPage />
+    <div className="h-screen">
+      <Particles />
+      <Display />
+    </div>
   </Fragment>
 )
 
