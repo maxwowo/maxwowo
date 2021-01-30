@@ -15,13 +15,16 @@ const Icon: FunctionComponent<IconProps> = ({ className, icon, ...rest }) => (
     {...rest}
     className={classNames(
       className,
-      'text-4xl',
-      'z-auto',
+      'text-white',
+      'text-5xl',
       'transition',
       'duration-200',
       'ease-in-out',
-      'hover:cursor-pointer',
-      'hover:transform',
+      'transform',
+      'mx-6',
+      'mt-5',
+      'border-white',
+      'cursor-pointer',
       'hover:scale-150',
     )}
     icon={icon}

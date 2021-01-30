@@ -1,6 +1,7 @@
 import { FunctionComponent } from 'react'
 
 import Centered from './Centered'
+import Icons from './Icons'
 
 const Display: FunctionComponent = () => (
   <Centered>
@@ -11,6 +12,7 @@ const Display: FunctionComponent = () => (
       <p className="subpixel-antialiased text-white text-lg md:text-4xl">
         Software Engineering student @ UNSW
       </p>
+      <Icons />
     </div>
   </Centered>
 )
