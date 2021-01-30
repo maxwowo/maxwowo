@@ -23,7 +23,7 @@ const Display: FunctionComponent = () => (
           'subpixel-antialiased',
           'text-white',
           'text-lg',
-          'md:text-4xl',
+          'md:text-3xl',
         )}
       >
         Software Engineering student @ UNSW
