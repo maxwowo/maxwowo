@@ -21,7 +21,7 @@ const Icon: FunctionComponent<IconProps> = ({ className, icon, ...rest }) => (
       'transition',
       'duration-200',
       'ease-in-out',
-      'transform',
+      'transform-gpu',
       'mx-4',
       'md:mx-6',
       'mt-4',
