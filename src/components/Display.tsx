@@ -1,3 +1,4 @@
+import classNames from 'classnames'
 import { FunctionComponent } from 'react'
 
 import Centered from './Centered'
@@ -5,11 +6,26 @@ import Icons from './Icons'
 
 const Display: FunctionComponent = () => (
   <Centered>
-    <div className="z-10">
-      <p className="subpixel-antialiased text-white text-7xl md:text-10xl font-medium">
+    <div className={classNames('z-10')}>
+      <p
+        className={classNames(
+          'subpixel-antialiased',
+          'text-white',
+          'text-7xl',
+          'md:text-10xl',
+          'font-medium',
+        )}
+      >
         Max Wo
       </p>
-      <p className="subpixel-antialiased text-white text-lg md:text-4xl">
+      <p
+        className={classNames(
+          'subpixel-antialiased',
+          'text-white',
+          'text-lg',
+          'md:text-4xl',
+        )}
+      >
         Software Engineering student @ UNSW
       </p>
       <Icons />

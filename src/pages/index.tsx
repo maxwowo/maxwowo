@@ -1,3 +1,4 @@
+import classNames from 'classnames'
 import { NextPage } from 'next'
 import Head from 'next/head'
 import { Fragment } from 'react'
@@ -10,7 +11,7 @@ const Landing: NextPage = () => (
     <Head>
       <title>¯\_(ツ)_/¯</title>
     </Head>
-    <div className="h-screen">
+    <div className={classNames('h-screen')}>
       <Particles />
       <Display />
     </div>
