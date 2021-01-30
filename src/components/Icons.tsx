@@ -1,3 +1,4 @@
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faBlog, faFilePdf } from '@fortawesome/free-solid-svg-icons'
 import { FunctionComponent } from 'react'
@@ -5,7 +6,7 @@ import { FunctionComponent } from 'react'
 import Centered from './Centered'
 import Icon from './Icon'
 
-const icons = [
+const icons: { icon: IconDefinition; url: string }[] = [
   {
     icon: faGithub,
     url: 'https://github.com/maxwowo',
