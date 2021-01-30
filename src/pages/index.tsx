@@ -11,7 +11,7 @@ const Landing: NextPage = () => (
     <Head>
       <title>¯\_(ツ)_/¯</title>
     </Head>
-    <div className={classNames('h-screen')}>
+    <div className={classNames('h-screen', 'bg-black')}>
       <Particles />
       <Display />
     </div>

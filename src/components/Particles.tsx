@@ -3,7 +3,8 @@ import ParticlesJs from 'react-particles-js'
 
 const Particles = () => (
   <ParticlesJs
-    canvasClassName={classNames('bg-black', 'absolute z-0')}
+    canvasClassName={classNames('absolute z-0')}
+    className={classNames('hidden', 'md:block')}
     params={{
       interactivity: {
         events: {
