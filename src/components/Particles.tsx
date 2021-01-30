@@ -17,7 +17,7 @@ const Particles: FunctionComponent = () => (
       },
       particles: {
         number: {
-          value: 50,
+          value: 100,
         },
       },
     }}
