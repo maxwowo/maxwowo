@@ -8,7 +8,12 @@ const Centered: FunctionComponent<HTMLAttributes<HTMLDivElement>> = ({
   <div
     className={classNames(
       className,
-      'h-full w-full flex items-center justify-center text-center',
+      'h-full',
+      'w-full',
+      'flex',
+      'items-center',
+      'justify-center',
+      'text-center',
     )}
   >
     {children}
