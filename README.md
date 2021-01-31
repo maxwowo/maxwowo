@@ -1,4 +1,4 @@
-3<sup>rd</sup> year Software Engineering student at UNSW. My specialties include googling error messages and modifying code copied from Stack Overflow. Little known fact: also dope on the mic.
+4<sup>th</sup> year Software Engineering student at UNSW. My specialties include googling error messages and modifying code copied from Stack Overflow. Little known fact: also dope on the mic.
 
 Like and subscribe:
 https://maxwowo.com
