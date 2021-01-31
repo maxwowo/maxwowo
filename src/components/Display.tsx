@@ -11,7 +11,7 @@ const Display: FunctionComponent = () => (
         className={classNames(
           'subpixel-antialiased',
           'text-white',
-          'text-7xl',
+          'text-8xl',
           'md:text-10xl',
           'font-medium',
         )}
