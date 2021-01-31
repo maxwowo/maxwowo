@@ -10,7 +10,7 @@ const Landing: NextPage = () => (
   <Fragment>
     <NextSeo
       description="4th year Software Engineering student at UNSW. My specialties include googling error messages and modifying code copied from Stack Overflow. Little known fact: also dope on the mic."
-      title="¯\_(ツ)_/¯"
+      title="Max Wo"
     />
     <div className={classNames('h-screen', 'bg-black')}>
       <Particles />
