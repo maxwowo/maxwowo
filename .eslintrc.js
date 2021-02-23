@@ -14,7 +14,6 @@ module.exports = {
     'plugin:import/typescript',
     'plugin:typescript-sort-keys/recommended',
     'plugin:prettier/recommended',
-    'prettier/@typescript-eslint',
   ],
   globals: {
     React: 'writable',
