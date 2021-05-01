@@ -1,4 +1,4 @@
-import classNames from 'classnames'
+import cls from '@jikanban/cls'
 import { FunctionComponent, HTMLAttributes } from 'react'
 
 const Centered: FunctionComponent<HTMLAttributes<HTMLDivElement>> = ({
@@ -6,7 +6,7 @@ const Centered: FunctionComponent<HTMLAttributes<HTMLDivElement>> = ({
   className,
 }) => (
   <div
-    className={classNames(
+    className={cls(
       className,
       'h-full',
       'w-full',

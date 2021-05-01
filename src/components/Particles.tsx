@@ -1,11 +1,11 @@
-import classNames from 'classnames'
+import cls from '@jikanban/cls'
 import { FunctionComponent } from 'react'
 import ParticlesJs from 'react-particles-js'
 
 const Particles: FunctionComponent = () => (
   <ParticlesJs
-    canvasClassName={classNames('absolute z-0')}
-    className={classNames('hidden', 'md:block')}
+    canvasClassName={cls('absolute z-0')}
+    className={cls('hidden', 'md:block')}
     params={{
       interactivity: {
         events: {

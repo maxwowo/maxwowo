@@ -1,4 +1,4 @@
-import classNames from 'classnames'
+import cls from '@jikanban/cls'
 import { NextPage } from 'next'
 import { NextSeo } from 'next-seo'
 import { Fragment } from 'react'
@@ -12,7 +12,7 @@ const Landing: NextPage = () => (
       description="4th year Software Engineering student at UNSW. My specialties include googling error messages and modifying code copied from Stack Overflow. Little known fact: also dope on the mic."
       title="¯\_(ツ)_/¯"
     />
-    <div className={classNames('h-screen', 'bg-black')}>
+    <div className={cls('h-screen', 'bg-black')}>
       <Particles />
       <Display />
     </div>

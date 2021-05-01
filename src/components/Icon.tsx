@@ -3,7 +3,7 @@ import {
   FontAwesomeIcon,
   FontAwesomeIconProps,
 } from '@fortawesome/react-fontawesome'
-import classNames from 'classnames'
+import cls from '@jikanban/cls'
 import { FunctionComponent } from 'react'
 
 interface IconProps extends FontAwesomeIconProps {
@@ -13,7 +13,7 @@ interface IconProps extends FontAwesomeIconProps {
 const Icon: FunctionComponent<IconProps> = ({ className, icon, ...rest }) => (
   <FontAwesomeIcon
     {...rest}
-    className={classNames(
+    className={cls(
       className,
       'text-white',
       'text-4xl',

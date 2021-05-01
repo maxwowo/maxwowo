@@ -1,4 +1,4 @@
-import classNames from 'classnames'
+import cls from '@jikanban/cls'
 import { FunctionComponent } from 'react'
 
 import Centered from './Centered'
@@ -6,9 +6,9 @@ import Icons from './Icons'
 
 const Display: FunctionComponent = () => (
   <Centered>
-    <div className={classNames('z-10')}>
+    <div className={cls('z-10')}>
       <p
-        className={classNames(
+        className={cls(
           'subpixel-antialiased',
           'text-white',
           'text-8xl',
@@ -19,7 +19,7 @@ const Display: FunctionComponent = () => (
         Max Wo
       </p>
       <p
-        className={classNames(
+        className={cls(
           'subpixel-antialiased',
           'text-white',
           'text-lg',
