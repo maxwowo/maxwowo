@@ -1,23 +1,34 @@
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { faBlog, faFilePdf } from '@fortawesome/free-solid-svg-icons'
+import {
+  faBlog,
+  faFilePdf,
+  faPlayCircle,
+} from '@fortawesome/free-solid-svg-icons'
 import { FunctionComponent } from 'react'
 
 import Centered from './Centered'
 import Icon from './Icon'
 
-const icons: { icon: IconDefinition; url: string }[] = [
+const icons: {
+  icon: IconDefinition
+  url: string
+}[] = [
   {
     icon: faGithub,
     url: 'https://github.com/maxwowo',
   },
   {
-    icon: faLinkedin,
-    url: 'https://www.linkedin.com/in/maxwo',
+    icon: faPlayCircle,
+    url: 'https://google.com',
   },
   {
     icon: faBlog,
     url: 'https://street.maxwowo.com/',
+  },
+  {
+    icon: faLinkedin,
+    url: 'https://www.linkedin.com/in/maxwo',
   },
   {
     icon: faFilePdf,
