@@ -1,10 +1,10 @@
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core'
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import {
-  faBlog,
-  faFilePdf,
-  faPlayCircle,
-} from '@fortawesome/free-solid-svg-icons'
+  faBlogger,
+  faGithub,
+  faLinkedin,
+} from '@fortawesome/free-brands-svg-icons'
+import { faFilePdf, faPlayCircle } from '@fortawesome/free-solid-svg-icons'
 import { FunctionComponent } from 'react'
 
 import Centered from './Centered'
@@ -20,10 +20,10 @@ const icons: {
   },
   {
     icon: faPlayCircle,
-    url: 'https://google.com',
+    url: 'https://www.youtube.com/channel/UCkdzgKxdNJpgwR3ewxPMoqQ',
   },
   {
-    icon: faBlog,
+    icon: faBlogger,
     url: 'https://street.maxwowo.com/',
   },
   {
