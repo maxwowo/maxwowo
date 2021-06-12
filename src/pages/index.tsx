@@ -9,7 +9,7 @@ import Particles from '../components/Particles'
 const Landing: NextPage = () => (
   <Fragment>
     <NextSeo
-      description="4th year Software Engineering student at UNSW. My specialties include googling error messages and modifying code copied from Stack Overflow. Little known fact: also dope on the mic."
+      description="4th year Computer Science student at UNSW. My specialties include googling error messages and modifying code copied from Stack Overflow. Little known fact: also dope on the mic."
       title="¯\_(ツ)_/¯"
     />
     <div className={cls('h-screen', 'bg-black')}>
