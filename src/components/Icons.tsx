@@ -1,7 +1,7 @@
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core'
 import {
-  faBlogger,
   faGithub,
+  faInstagram,
   faLinkedin,
 } from '@fortawesome/free-brands-svg-icons'
 import { faFilePdf, faPlayCircle } from '@fortawesome/free-solid-svg-icons'
@@ -23,8 +23,8 @@ const icons: {
     url: 'https://www.youtube.com/channel/UCkdzgKxdNJpgwR3ewxPMoqQ',
   },
   {
-    icon: faBlogger,
-    url: 'https://street.maxwowo.com/',
+    icon: faInstagram,
+    url: 'https://www.instagram.com/maxwowowowo',
   },
   {
     icon: faLinkedin,
