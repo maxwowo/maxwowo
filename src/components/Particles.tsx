@@ -16,6 +16,9 @@ const Particles: FunctionComponent = () => (
         },
       },
       particles: {
+        move: {
+          speed: 1,
+        },
         number: {
           value: 100,
         },
