@@ -1,10 +1,6 @@
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core'
-import {
-  faGithub,
-  faInstagram,
-  faLinkedin,
-} from '@fortawesome/free-brands-svg-icons'
-import { faFilePdf, faPlayCircle } from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faCamera, faFilePdf, faVideo } from '@fortawesome/free-solid-svg-icons'
 import { FunctionComponent } from 'react'
 
 import Centered from './Centered'
@@ -19,11 +15,11 @@ const icons: {
     url: 'https://github.com/maxwowo',
   },
   {
-    icon: faPlayCircle,
+    icon: faVideo,
     url: 'https://www.youtube.com/channel/UCkdzgKxdNJpgwR3ewxPMoqQ',
   },
   {
-    icon: faInstagram,
+    icon: faCamera,
     url: 'https://www.instagram.com/maxwowowowo',
   },
   {
