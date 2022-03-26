@@ -1,26 +1,38 @@
 import cls from '@jikanban/cls'
 import { FunctionComponent } from 'react'
-import ParticlesJs from 'react-particles-js'
+import TsParticles from 'react-tsparticles'
 
 const Particles: FunctionComponent = () => (
-  <ParticlesJs
+  <TsParticles
     canvasClassName={cls('absolute z-0')}
     className={cls('hidden', 'md:block')}
-    params={{
+    options={{
+      detectRetina: true,
+      fpsLimit: 120,
       interactivity: {
         events: {
-          onhover: {
+          onHover: {
             enable: true,
             mode: 'repulse',
           },
         },
       },
       particles: {
+        links: {
+          enable: true,
+        },
         move: {
+          enable: true,
           speed: 1,
         },
         number: {
-          value: 100,
+          value: 150,
+        },
+        opacity: {
+          value: 0.5,
+        },
+        size: {
+          value: 1,
         },
       },
     }}
