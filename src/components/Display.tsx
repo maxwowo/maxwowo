@@ -26,7 +26,7 @@ const Display: FunctionComponent = () => (
           'md:text-3xl',
         )}
       >
-        Computer Science student @ UNSW
+        Software Engineer @ Atlassian
       </p>
       <Icons />
     </div>
