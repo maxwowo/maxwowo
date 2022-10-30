@@ -1,15 +1,12 @@
-import { IconDefinition } from '@fortawesome/fontawesome-svg-core'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faCamera, faFilePdf, faVideo } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import cls from '@jikanban/cls'
 import { FunctionComponent } from 'react'
 
 import Centered from './Centered'
-import Icon from './Icon'
 
-const icons: {
-  icon: IconDefinition
-  url: string
-}[] = [
+const icons = [
   {
     icon: faGithub,
     url: 'https://github.com/maxwowo',
@@ -35,13 +32,29 @@ const icons: {
 const Icons: FunctionComponent = () => (
   <Centered>
     {icons.map((icon) => (
-      <Icon
+      <a
         key={icon.url}
-        icon={icon.icon}
-        onClick={() => {
-          window.open(icon.url, '_blank')
-        }}
-      />
+        className={cls(
+          'text-white',
+          'text-4xl',
+          'md:text-5xl',
+          'transition',
+          'duration-200',
+          'ease-in-out',
+          'transform-gpu',
+          'mx-4',
+          'md:mx-6',
+          'mt-4',
+          'md:mt-6',
+          'border-white',
+          'hover:scale-150',
+        )}
+        href={icon.url}
+        rel="noreferrer"
+        target="_blank"
+      >
+        <FontAwesomeIcon icon={icon.icon} />
+      </a>
     ))}
   </Centered>
 )
