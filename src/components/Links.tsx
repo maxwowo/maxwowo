@@ -47,7 +47,7 @@ const Links: FunctionComponent = () => (
           'mt-4',
           'md:mt-6',
           'border-white',
-          'hover:scale-150',
+          'md:hover:scale-150',
         )}
         href={icon.url}
         rel="noreferrer"
