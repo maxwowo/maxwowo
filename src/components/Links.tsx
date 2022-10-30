@@ -6,7 +6,7 @@ import { FunctionComponent } from 'react'
 
 import Centered from './Centered'
 
-const icons = [
+const links = [
   {
     icon: faGithub,
     url: 'https://github.com/maxwowo',
@@ -29,9 +29,9 @@ const icons = [
   },
 ]
 
-const Icons: FunctionComponent = () => (
+const Links: FunctionComponent = () => (
   <Centered>
-    {icons.map((icon) => (
+    {links.map((icon) => (
       <a
         key={icon.url}
         className={cls(
@@ -59,4 +59,4 @@ const Icons: FunctionComponent = () => (
   </Centered>
 )
 
-export default Icons
+export default Links

@@ -3,7 +3,7 @@ import { NextPage } from 'next'
 import { NextSeo } from 'next-seo'
 import { Fragment } from 'react'
 
-import Display from '../components/Display'
+import Hero from '../components/Hero'
 import Particles from '../components/Particles'
 
 const Landing: NextPage = () => (
@@ -14,7 +14,7 @@ const Landing: NextPage = () => (
     />
     <div className={cls('h-screen', 'bg-black')}>
       <Particles />
-      <Display />
+      <Hero />
     </div>
   </Fragment>
 )

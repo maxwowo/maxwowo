@@ -2,9 +2,9 @@ import cls from '@jikanban/cls'
 import { FunctionComponent } from 'react'
 
 import Centered from './Centered'
-import Icons from './Icons'
+import Links from './Links'
 
-const Display: FunctionComponent = () => (
+const Hero: FunctionComponent = () => (
   <Centered>
     <div className={cls('z-10')}>
       <p
@@ -28,9 +28,9 @@ const Display: FunctionComponent = () => (
       >
         Software Engineer @ Atlassian
       </p>
-      <Icons />
+      <Links />
     </div>
   </Centered>
 )
 
-export default Display
+export default Hero
