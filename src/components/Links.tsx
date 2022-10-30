@@ -1,7 +1,7 @@
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faCamera, faFilePdf, faVideo } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import cls from '@jikanban/cls'
+import cls from '@maxwowo/cls'
 import { FunctionComponent } from 'react'
 
 import Centered from './Centered'

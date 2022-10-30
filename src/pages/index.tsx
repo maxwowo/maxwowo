@@ -1,4 +1,4 @@
-import cls from '@jikanban/cls'
+import cls from '@maxwowo/cls'
 import { NextPage } from 'next'
 import { NextSeo } from 'next-seo'
 import { Fragment } from 'react'

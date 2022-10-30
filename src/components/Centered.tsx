@@ -1,4 +1,4 @@
-import cls from '@jikanban/cls'
+import cls from '@maxwowo/cls'
 import { FunctionComponent, HTMLAttributes } from 'react'
 
 const Centered: FunctionComponent<HTMLAttributes<HTMLDivElement>> = ({

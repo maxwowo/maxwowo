@@ -1,4 +1,4 @@
-import cls from '@jikanban/cls'
+import cls from '@maxwowo/cls'
 import { FunctionComponent } from 'react'
 import TsParticles from 'react-tsparticles'
 import { loadFull } from 'tsparticles'
