@@ -17,7 +17,7 @@ const links = [
   },
   {
     icon: faCamera,
-    url: 'https://www.instagram.com/maxwowowowo',
+    url: 'https://portfolio.maxwowo.com',
   },
   {
     icon: faLinkedin,
