@@ -12,7 +12,7 @@ const Landing: NextPage = () => (
       description="Software Engineer at Atlassian. My specialties include googling error messages and modifying code copied from Stack Overflow. Little known fact: also dope on the mic."
       title="¯\_(ツ)_/¯"
     />
-    <div className={cls('h-screen', 'bg-black')}>
+    <div className={cls('h-full', 'bg-black')}>
       <Particles />
       <Hero />
     </div>
