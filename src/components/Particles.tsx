@@ -1,19 +1,26 @@
 import cls from '@maxwowo/cls'
-import { FunctionComponent } from 'react'
-import TsParticles from 'react-tsparticles'
-import { loadFull } from 'tsparticles'
-import { Engine } from 'tsparticles-engine'
+import TsParticles, { initParticlesEngine } from '@tsparticles/react'
+import { loadSlim } from '@tsparticles/slim'
+import { FunctionComponent, useCallback, useEffect, useState } from 'react'
 
 const Particles: FunctionComponent = () => {
-  const handleInit = async (main: Engine) => {
-    await loadFull(main)
-  }
+  const [isLoading, setIsLoading] = useState(true)
 
-  return (
+  const doInitParticlesEngine = useCallback(async () => {
+    await initParticlesEngine(async (engine) => {
+      loadSlim(engine)
+    })
+
+    setIsLoading(false)
+  }, [])
+
+  useEffect(() => {
+    doInitParticlesEngine()
+  }, [doInitParticlesEngine])
+
+  return isLoading ? null : (
     <TsParticles
-      canvasClassName={cls('absolute', 'z-0')}
       className={cls('hidden', 'md:block')}
-      init={handleInit}
       options={{
         detectRetina: true,
         fpsLimit: 120,
