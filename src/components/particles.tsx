@@ -3,22 +3,20 @@
 import cls from '@maxwowo/cls'
 import TsParticles, { initParticlesEngine } from '@tsparticles/react'
 import { loadSlim } from '@tsparticles/slim'
-import { FunctionComponent, useCallback, useEffect, useState } from 'react'
+import { FunctionComponent, useEffect, useState } from 'react'
 
 export const Particles: FunctionComponent = () => {
   const [isLoading, setIsLoading] = useState(true)
 
-  const doInitParticlesEngine = useCallback(async () => {
-    await initParticlesEngine(async engine => {
-      loadSlim(engine)
-    })
-
-    setIsLoading(false)
-  }, [])
-
   useEffect(() => {
-    doInitParticlesEngine()
-  }, [doInitParticlesEngine])
+    ;(async () => {
+      await initParticlesEngine(async engine => {
+        loadSlim(engine)
+      })
+
+      setIsLoading(false)
+    })()
+  }, [])
 
   return isLoading ? null : (
     <TsParticles
