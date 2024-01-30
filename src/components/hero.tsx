@@ -1,10 +1,10 @@
 import cls from '@maxwowo/cls'
 import { FunctionComponent } from 'react'
 
-import Centered from './Centered'
-import Links from './Links'
+import { Centered } from './centered'
+import { Links } from './links'
 
-const Hero: FunctionComponent = () => (
+export const Hero: FunctionComponent = () => (
   <Centered>
     <div className={cls('z-10')}>
       <p
@@ -13,7 +13,7 @@ const Hero: FunctionComponent = () => (
           'text-white',
           'text-8xl',
           'md:text-10xl',
-          'font-medium',
+          'font-medium'
         )}
       >
         Max Wo
@@ -23,7 +23,7 @@ const Hero: FunctionComponent = () => (
           'subpixel-antialiased',
           'text-white',
           'text-lg',
-          'md:text-3xl',
+          'md:text-3xl'
         )}
       >
         Software Engineer @ Atlassian
@@ -32,5 +32,3 @@ const Hero: FunctionComponent = () => (
     </div>
   </Centered>
 )
-
-export default Hero

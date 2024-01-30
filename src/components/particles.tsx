@@ -1,13 +1,15 @@
+'use client'
+
 import cls from '@maxwowo/cls'
 import TsParticles, { initParticlesEngine } from '@tsparticles/react'
 import { loadSlim } from '@tsparticles/slim'
 import { FunctionComponent, useCallback, useEffect, useState } from 'react'
 
-const Particles: FunctionComponent = () => {
+export const Particles: FunctionComponent = () => {
   const [isLoading, setIsLoading] = useState(true)
 
   const doInitParticlesEngine = useCallback(async () => {
-    await initParticlesEngine(async (engine) => {
+    await initParticlesEngine(async engine => {
       loadSlim(engine)
     })
 
@@ -28,31 +30,29 @@ const Particles: FunctionComponent = () => {
           events: {
             onHover: {
               enable: true,
-              mode: 'repulse',
-            },
-          },
+              mode: 'repulse'
+            }
+          }
         },
         particles: {
           links: {
-            enable: true,
+            enable: true
           },
           move: {
             enable: true,
-            speed: 1,
+            speed: 1
           },
           number: {
-            value: 150,
+            value: 150
           },
           opacity: {
-            value: 0.5,
+            value: 0.5
           },
           size: {
-            value: 1,
-          },
-        },
+            value: 1
+          }
+        }
       }}
     />
   )
 }
-
-export default Particles
