@@ -95,7 +95,7 @@ devDependencies:
     specifier: 3.1.0
     version: 3.1.0(@typescript-eslint/parser@6.19.1)(eslint@8.56.0)(typescript@5.3.3)
   eslint-plugin-unicorn:
-    specifier: ^50.0.1
+    specifier: 50.0.1
     version: 50.0.1(eslint@8.56.0)
   husky:
     specifier: 9.0.6
