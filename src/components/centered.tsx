@@ -1,4 +1,3 @@
-import cls from '@maxwowo/cls'
 import { FunctionComponent, HTMLAttributes } from 'react'
 
 export const Centered: FunctionComponent<HTMLAttributes<HTMLDivElement>> = ({
@@ -6,15 +5,7 @@ export const Centered: FunctionComponent<HTMLAttributes<HTMLDivElement>> = ({
   className
 }) => (
   <div
-    className={cls(
-      className,
-      'h-full',
-      'w-full',
-      'flex',
-      'items-center',
-      'justify-center',
-      'text-center'
-    )}
+    className={`flex size-full items-center justify-center text-center ${className}`}
   >
     {children}
   </div>

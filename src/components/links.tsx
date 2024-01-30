@@ -1,10 +1,9 @@
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faCamera, faFilePdf, faVideo } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import cls from '@maxwowo/cls'
 import { FunctionComponent } from 'react'
 
-import { Centered } from './centered'
+import { Centered } from '@/components/centered'
 
 const links = [
   {
@@ -34,24 +33,10 @@ export const Links: FunctionComponent = () => (
     {links.map(icon => (
       <a
         key={icon.url}
+        className="mx-4 mt-4 transform-gpu border-white text-4xl text-white transition duration-200 ease-in-out md:mx-6 md:mt-6 md:text-5xl md:hover:scale-150"
         href={icon.url}
         rel="noreferrer"
         target="_blank"
-        className={cls(
-          'text-white',
-          'text-4xl',
-          'md:text-5xl',
-          'transition',
-          'duration-200',
-          'ease-in-out',
-          'transform-gpu',
-          'mx-4',
-          'md:mx-6',
-          'mt-4',
-          'md:mt-6',
-          'border-white',
-          'md:hover:scale-150'
-        )}
       >
         <FontAwesomeIcon icon={icon.icon} />
       </a>

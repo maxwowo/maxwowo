@@ -4,6 +4,7 @@
     "@typescript-eslint",
     "eslint-plugin-tailwindcss",
     "simple-import-sort",
+    "unicorn",
     "prettier"
   ],
   "rules": {
@@ -29,6 +30,12 @@
     "react-hooks/exhaustive-deps": "error",
     "import/order": "off",
     "import/no-default-export": "error",
+    "no-restricted-imports": [
+      "error",
+      {
+        "patterns": [".*"]
+      }
+    ],
     "react/jsx-sort-props": [
       "error",
       {
@@ -36,6 +43,12 @@
         "reservedFirst": true,
         "shorthandFirst": true,
         "multiline": "last"
+      }
+    ],
+    "unicorn/filename-case": [
+      "error",
+      {
+        "case": "kebabCase"
       }
     ],
     "tailwindcss/classnames-order": "error",

@@ -1,31 +1,15 @@
-import cls from '@maxwowo/cls'
 import { FunctionComponent } from 'react'
 
-import { Centered } from './centered'
-import { Links } from './links'
+import { Centered } from '@/components/centered'
+import { Links } from '@/components/links'
 
 export const Hero: FunctionComponent = () => (
   <Centered>
-    <div className={cls('z-10')}>
-      <p
-        className={cls(
-          'subpixel-antialiased',
-          'text-white',
-          'text-8xl',
-          'md:text-10xl',
-          'font-medium'
-        )}
-      >
+    <div className="z-10">
+      <p className="text-8xl font-medium text-white subpixel-antialiased md:text-10xl">
         Max Wo
       </p>
-      <p
-        className={cls(
-          'subpixel-antialiased',
-          'text-white',
-          'text-lg',
-          'md:text-3xl'
-        )}
-      >
+      <p className="text-lg text-white subpixel-antialiased md:text-3xl">
         Software Engineer @ Atlassian
       </p>
       <Links />

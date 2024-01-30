@@ -1,6 +1,5 @@
 'use client'
 
-import cls from '@maxwowo/cls'
 import TsParticles, { initParticlesEngine } from '@tsparticles/react'
 import { loadSlim } from '@tsparticles/slim'
 import { FunctionComponent, useEffect, useState } from 'react'
@@ -20,7 +19,7 @@ export const Particles: FunctionComponent = () => {
 
   return isLoading ? null : (
     <TsParticles
-      className={cls('hidden', 'md:block')}
+      className="hidden md:block"
       options={{
         detectRetina: true,
         fpsLimit: 120,
