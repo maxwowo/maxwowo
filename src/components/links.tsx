@@ -1,7 +1,7 @@
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faCamera, faFilePdf, faVideo } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { FunctionComponent } from 'react'
+import { FunctionComponent, memo } from 'react'
 
 import { Centered } from '@/components/centered'
 
@@ -28,7 +28,7 @@ const links = [
   }
 ]
 
-export const Links: FunctionComponent = () => (
+export const Links: FunctionComponent = memo(() => (
   <Centered>
     {links.map(icon => (
       <a
@@ -42,4 +42,4 @@ export const Links: FunctionComponent = () => (
       </a>
     ))}
   </Centered>
-)
+))

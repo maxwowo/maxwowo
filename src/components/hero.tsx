@@ -1,9 +1,9 @@
-import { FunctionComponent } from 'react'
+import { FunctionComponent, memo } from 'react'
 
 import { Centered } from '@/components/centered'
 import { Links } from '@/components/links'
 
-export const Hero: FunctionComponent = () => (
+export const Hero: FunctionComponent = memo(() => (
   <Centered>
     <div className="z-10">
       <p className="text-8xl font-medium text-white subpixel-antialiased md:text-10xl">
@@ -15,4 +15,4 @@ export const Hero: FunctionComponent = () => (
       <Links />
     </div>
   </Centered>
-)
+))

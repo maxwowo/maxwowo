@@ -45,6 +45,7 @@
         "multiline": "last"
       }
     ],
+    "react/display-name": "off",
     "unicorn/filename-case": [
       "error",
       {

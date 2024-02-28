@@ -2,54 +2,56 @@
 
 import TsParticles, { initParticlesEngine } from '@tsparticles/react'
 import { loadSlim } from '@tsparticles/slim'
-import { FunctionComponent, useEffect, useState } from 'react'
+import { FunctionComponent, memo, useEffect, useState } from 'react'
+import { useWindowSize } from 'usehooks-ts'
 
-export const Particles: FunctionComponent = () => {
+export const Particles: FunctionComponent = memo(() => {
+  const windowSize = useWindowSize({ initializeWithValue: false })
+
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
     ;(async () => {
-      await initParticlesEngine(async engine => {
-        loadSlim(engine)
-      })
+      await initParticlesEngine(loadSlim)
 
       setIsLoading(false)
     })()
   }, [])
 
-  return isLoading ? null : (
-    <TsParticles
-      className="hidden md:block"
-      options={{
-        detectRetina: true,
-        fpsLimit: 120,
-        interactivity: {
-          events: {
-            onHover: {
+  return (
+    !isLoading &&
+    windowSize.width &&
+    windowSize.height && (
+      <TsParticles
+        options={{
+          interactivity: {
+            events: {
+              onHover: {
+                enable: true,
+                mode: 'repulse'
+              }
+            }
+          },
+          particles: {
+            links: {
+              enable: true
+            },
+            move: {
               enable: true,
-              mode: 'repulse'
+              speed: 1
+            },
+            number: {
+              value: (windowSize.width * windowSize.height) / 20736
+            },
+            opacity: {
+              value: 0.5
+            },
+            size: {
+              value: 1
             }
           }
-        },
-        particles: {
-          links: {
-            enable: true
-          },
-          move: {
-            enable: true,
-            speed: 1
-          },
-          number: {
-            value: 150
-          },
-          opacity: {
-            value: 0.5
-          },
-          size: {
-            value: 1
-          }
-        }
-      }}
-    />
+        }}
+      />
+    )
   )
-}
+})
