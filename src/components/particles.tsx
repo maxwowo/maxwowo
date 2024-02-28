@@ -41,7 +41,7 @@ export const Particles: FunctionComponent = memo(() => {
               speed: 1
             },
             number: {
-              value: (windowSize.width * windowSize.height) / 20736
+              value: (windowSize.width * windowSize.height) / 13824
             },
             opacity: {
               value: 0.5
