@@ -4,6 +4,9 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+overrides:
+  '@tsparticles/slim': 3.0.0
+
 dependencies:
   '@fortawesome/fontawesome-svg-core':
     specifier: ^6.2.1
@@ -21,8 +24,8 @@ dependencies:
     specifier: ^3.0.0
     version: 3.0.0(@tsparticles/engine@3.3.0)(react-dom@18.2.0)(react@18.2.0)
   '@tsparticles/slim':
-    specifier: ^3.0.2
-    version: 3.3.0
+    specifier: 3.0.0
+    version: 3.0.0
   next:
     specifier: 14.1.0
     version: 14.1.0(react-dom@18.2.0)(react@18.2.0)
@@ -763,8 +766,8 @@ packages:
       '@tsparticles/engine': 3.3.0
     dev: false
 
-  /@tsparticles/slim@3.3.0:
-    resolution: {integrity: sha512-/FAbB4b9/j7xaZYuGx+uU4rDLrLs7zEShwFHDWc4PWn/970CX+EvKszqNrBvQDuqDD3HZQ94iCwj7w9OWKXLTg==}
+  /@tsparticles/slim@3.0.0:
+    resolution: {integrity: sha512-8+C6mo8ckHwElUT6yej2+pm7Tcfg5/PvcVZBxv/rV0dOMiYjFX5uHiGMj1X4HgTdOh74CoDxJCHSDihWd4KU2A==}
     dependencies:
       '@tsparticles/basic': 3.3.0
       '@tsparticles/engine': 3.3.0
@@ -781,16 +784,22 @@ packages:
       '@tsparticles/interaction-particles-attract': 3.3.0
       '@tsparticles/interaction-particles-collisions': 3.3.0
       '@tsparticles/interaction-particles-links': 3.3.0
+      '@tsparticles/move-base': 3.3.0
       '@tsparticles/move-parallax': 3.3.0
       '@tsparticles/plugin-easing-quad': 3.3.0
+      '@tsparticles/shape-circle': 3.3.0
       '@tsparticles/shape-emoji': 3.3.0
       '@tsparticles/shape-image': 3.3.0
       '@tsparticles/shape-line': 3.3.0
       '@tsparticles/shape-polygon': 3.3.0
       '@tsparticles/shape-square': 3.3.0
       '@tsparticles/shape-star': 3.3.0
+      '@tsparticles/updater-color': 3.3.0
       '@tsparticles/updater-life': 3.3.0
+      '@tsparticles/updater-opacity': 3.3.0
+      '@tsparticles/updater-out-modes': 3.3.0
       '@tsparticles/updater-rotate': 3.3.0
+      '@tsparticles/updater-size': 3.3.0
       '@tsparticles/updater-stroke-color': 3.3.0
     dev: false
 
