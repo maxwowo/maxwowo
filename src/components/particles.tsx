@@ -1,57 +1,49 @@
 'use client'
 
-import TsParticles, { initParticlesEngine } from '@tsparticles/react'
-import { loadSlim } from '@tsparticles/slim'
-import { FunctionComponent, memo, useEffect, useState } from 'react'
+import { FunctionComponent, memo, useCallback } from 'react'
+import ReactParticles from 'react-particles'
+import type { Engine } from 'tsparticles-engine'
+import { loadSlim } from 'tsparticles-slim'
 import { useWindowSize } from 'usehooks-ts'
 
 export const Particles: FunctionComponent = memo(() => {
-  const windowSize = useWindowSize({ initializeWithValue: false })
+  const windowSize = useWindowSize()
 
-  const [isLoading, setIsLoading] = useState(true)
-
-  useEffect(() => {
-    ;(async () => {
-      await initParticlesEngine(loadSlim)
-
-      setIsLoading(false)
-    })()
+  const handleParticlesInit = useCallback(async (engine: Engine) => {
+    await loadSlim(engine)
   }, [])
 
   return (
-    !isLoading &&
-    windowSize.width &&
-    windowSize.height && (
-      <TsParticles
-        options={{
-          interactivity: {
-            events: {
-              onHover: {
-                enable: true,
-                mode: 'repulse'
-              }
-            }
-          },
-          particles: {
-            links: {
-              enable: true
-            },
-            move: {
+    <ReactParticles
+      init={handleParticlesInit}
+      options={{
+        interactivity: {
+          events: {
+            onHover: {
               enable: true,
-              speed: 1
-            },
-            number: {
-              value: (windowSize.width * windowSize.height) / 13824
-            },
-            opacity: {
-              value: 0.5
-            },
-            size: {
-              value: 1
+              mode: 'repulse'
             }
           }
-        }}
-      />
-    )
+        },
+        particles: {
+          links: {
+            enable: true
+          },
+          move: {
+            enable: true,
+            speed: 1
+          },
+          number: {
+            value: (windowSize.width * windowSize.height) / 13824
+          },
+          opacity: {
+            value: 0.5
+          },
+          size: {
+            value: 1
+          }
+        }
+      }}
+    />
   )
 })
