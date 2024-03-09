@@ -2,7 +2,10 @@ import '@/app/globals.css'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 
 import { Metadata } from 'next'
+import { Inter } from 'next/font/google'
 import { FunctionComponent, PropsWithChildren } from 'react'
+
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://maxwowo.com'),
@@ -19,7 +22,7 @@ export const metadata: Metadata = {
 
 const RootLayout: FunctionComponent<PropsWithChildren> = ({ children }) => (
   <html lang="en">
-    <body>{children}</body>
+    <body className={inter.className}>{children}</body>
   </html>
 )
 

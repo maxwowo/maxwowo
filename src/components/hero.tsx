@@ -6,10 +6,10 @@ import { Links } from '@/components/links'
 export const Hero: FunctionComponent = memo(() => (
   <Centered>
     <div className="z-10">
-      <p className="text-8xl font-medium text-white subpixel-antialiased md:text-10xl">
+      <p className="text-7xl font-medium text-white subpixel-antialiased md:text-10xl">
         Max Wo
       </p>
-      <p className="text-lg text-white subpixel-antialiased md:text-3xl">
+      <p className="text-base text-white subpixel-antialiased md:text-3xl">
         Software Engineer @ Atlassian
       </p>
       <Links />
