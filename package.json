@@ -28,7 +28,7 @@
     "@commitlint/config-conventional": "19.5.0",
     "@types/node": "22.8.2",
     "@types/react": "18.3.12",
-    "@typescript-eslint/eslint-plugin": "8.12.0",
+    "@typescript-eslint/eslint-plugin": "8.12.1",
     "@typescript-eslint/parser": "8.11.0",
     "autoprefixer": "10.4.20",
     "eslint": "9.13.0",
