@@ -45,7 +45,7 @@
     "eslint-plugin-tailwindcss": "3.17.5",
     "eslint-plugin-typescript-sort-keys": "3.3.0",
     "eslint-plugin-unicorn": "56.0.0",
-    "husky": "9.1.6",
+    "husky": "9.1.7",
     "lint-staged": "15.2.10",
     "postcss": "8.4.49",
     "prettier": "3.3.3",
