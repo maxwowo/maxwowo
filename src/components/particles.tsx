@@ -1,12 +1,12 @@
 'use client'
 
-import { FunctionComponent, memo, useCallback } from 'react'
+import { FunctionComponent, useCallback } from 'react'
 import ReactParticles from 'react-particles'
 import type { Engine } from 'tsparticles-engine'
 import { loadSlim } from 'tsparticles-slim'
 import { useWindowSize } from 'usehooks-ts'
 
-export const Particles: FunctionComponent = memo(() => {
+export const Particles: FunctionComponent = () => {
   const windowSize = useWindowSize()
 
   const handleParticlesInit = useCallback(async (engine: Engine) => {
@@ -46,4 +46,4 @@ export const Particles: FunctionComponent = memo(() => {
       }}
     />
   )
-})
+}

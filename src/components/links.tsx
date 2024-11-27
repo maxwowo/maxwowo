@@ -1,6 +1,4 @@
-import { FunctionComponent, memo } from 'react'
-
-import { Centered } from '@/components/centered'
+import { FunctionComponent } from 'react'
 
 const links = [
   {
@@ -97,8 +95,8 @@ const links = [
   }
 ]
 
-export const Links: FunctionComponent = memo(() => (
-  <Centered>
+export const Links: FunctionComponent = () => (
+  <div className="flex items-center justify-center">
     {links.map(icon => (
       <a
         key={icon.url}
@@ -110,5 +108,5 @@ export const Links: FunctionComponent = memo(() => (
         {icon.icon}
       </a>
     ))}
-  </Centered>
-))
+  </div>
+)
