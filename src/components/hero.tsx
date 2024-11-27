@@ -9,7 +9,7 @@ export const Hero: FunctionComponent = memo(() => (
       <p className="text-8xl font-medium leading-none tracking-tight text-white md:text-10xl">
         Max Wo
       </p>
-      <p className="text-xl text-white md:text-3xl">
+      <p className="text-xl text-white md:text-4xl">
         Software Engineer @ Atlassian
       </p>
       <Links />
