@@ -1,3 +1,4 @@
+import { IconProp } from '@fortawesome/fontawesome-svg-core'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faCamera, faFilePdf, faVideo } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -38,7 +39,7 @@ export const Links: FunctionComponent = memo(() => (
         rel="noreferrer"
         target="_blank"
       >
-        <FontAwesomeIcon icon={icon.icon} />
+        <FontAwesomeIcon icon={icon.icon as IconProp} />
       </a>
     ))}
   </Centered>
