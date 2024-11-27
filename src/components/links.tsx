@@ -6,7 +6,7 @@ const links = [
   {
     icon: (
       <svg
-        className="size-7 md:size-12"
+        className="size-9 md:size-12"
         fill="none"
         stroke="currentColor"
         strokeLinecap="round"
@@ -24,7 +24,7 @@ const links = [
   {
     icon: (
       <svg
-        className="size-7 md:size-12"
+        className="size-9 md:size-12"
         fill="none"
         stroke="currentColor"
         strokeLinecap="round"
@@ -42,7 +42,7 @@ const links = [
   {
     icon: (
       <svg
-        className="size-7 md:size-12"
+        className="size-9 md:size-12"
         fill="none"
         stroke="currentColor"
         strokeLinecap="round"
@@ -61,7 +61,7 @@ const links = [
   {
     icon: (
       <svg
-        className="size-7 md:size-12"
+        className="size-9 md:size-12"
         fill="none"
         stroke="currentColor"
         strokeLinecap="round"
@@ -80,7 +80,7 @@ const links = [
   {
     icon: (
       <svg
-        className="size-7 md:size-12"
+        className="size-9 md:size-12"
         fill="none"
         stroke="currentColor"
         strokeLinecap="round"
@@ -102,7 +102,7 @@ export const Links: FunctionComponent = memo(() => (
     {links.map(icon => (
       <a
         key={icon.url}
-        className="mx-4 mt-4 transform-gpu border-white text-white transition duration-200 ease-in-out md:mx-6 md:mt-6 md:text-5xl md:hover:scale-150"
+        className="mx-4 mt-4 border-white text-white transition duration-200 ease-in-out md:mx-6 md:mt-6 md:text-5xl md:hover:scale-150"
         href={icon.url}
         rel="noreferrer"
         target="_blank"
