@@ -91,11 +91,11 @@ const links = [
 ]
 
 export const Links: FunctionComponent = () => (
-  <div className="flex items-center justify-center md:gap-4">
+  <div className="flex items-center justify-center gap-8 md:gap-12">
     {links.map(icon => (
       <a
         key={icon.url}
-        className="mx-4 mt-4 border-white transition duration-200 ease-in-out md:mt-6 md:hover:scale-150"
+        className="mt-4 border-white transition duration-200 ease-in-out md:mt-6 md:hover:scale-150"
         href={icon.url}
         rel="noreferrer"
         target="_blank"
