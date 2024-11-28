@@ -4,7 +4,6 @@ const links = [
   {
     icon: (
       <svg
-        className="size-9 md:size-12"
         fill="none"
         stroke="currentColor"
         strokeLinecap="round"
@@ -22,7 +21,6 @@ const links = [
   {
     icon: (
       <svg
-        className="size-9 md:size-12"
         fill="none"
         stroke="currentColor"
         strokeLinecap="round"
@@ -40,7 +38,6 @@ const links = [
   {
     icon: (
       <svg
-        className="size-9 md:size-12"
         fill="none"
         stroke="currentColor"
         strokeLinecap="round"
@@ -59,7 +56,6 @@ const links = [
   {
     icon: (
       <svg
-        className="size-9 md:size-12"
         fill="none"
         stroke="currentColor"
         strokeLinecap="round"
@@ -78,7 +74,6 @@ const links = [
   {
     icon: (
       <svg
-        className="size-9 md:size-12"
         fill="none"
         stroke="currentColor"
         strokeLinecap="round"
@@ -96,16 +91,16 @@ const links = [
 ]
 
 export const Links: FunctionComponent = () => (
-  <div className="flex items-center justify-center">
+  <div className="flex items-center justify-center md:gap-4">
     {links.map(icon => (
       <a
         key={icon.url}
-        className="mx-4 mt-4 border-white text-white transition duration-200 ease-in-out md:mx-6 md:mt-6 md:text-5xl md:hover:scale-150"
+        className="mx-4 mt-4 border-white transition duration-200 ease-in-out md:mt-6 md:hover:scale-150"
         href={icon.url}
         rel="noreferrer"
         target="_blank"
       >
-        {icon.icon}
+        <div className="size-9 text-white md:size-12">{icon.icon}</div>
       </a>
     ))}
   </div>
