@@ -11,7 +11,7 @@ const Page: FunctionComponent = () => (
           Max Wo
         </p>
         <p className="text-xl text-white md:text-4xl">
-          Software Engineer @ Atlassian
+          Software Engineer from Australia
         </p>
         <Links />
       </div>
