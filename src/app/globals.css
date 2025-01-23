@@ -1,7 +1,12 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
-html, body, #__next {
-  @apply size-full
+html,
+body,
+#__next {
+  @apply size-full;
+}
+
+@theme {
+  --text-10xl: 11rem;
+  --text-10xl--line-height: 1.2;
 }

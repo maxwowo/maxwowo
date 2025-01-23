@@ -7,7 +7,7 @@ const Page: FunctionComponent = () => (
   <div className="size-full bg-black">
     <div className="flex size-full items-center justify-center text-center">
       <div>
-        <p className="text-8xl font-medium tracking-tight text-white md:text-10xl">
+        <p className="md:text-10xl text-8xl font-medium tracking-tight text-white">
           Max Wo
         </p>
         <p className="text-xl text-white md:text-4xl">
