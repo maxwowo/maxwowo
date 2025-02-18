@@ -4,6 +4,10 @@
     {
       "matchPackageNames": ["eslint"],
       "allowedVersions": "<9.0.0"
+    },
+    {
+      "matchPackageNames": ["eslint-plugin-unicorn"],
+      "allowedVersions": "<57.0.0"
     }
   ]
 }
