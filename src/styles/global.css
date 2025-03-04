@@ -1,0 +1,7 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Inter Variable', sans-serif;
+  --text-10xl: 11rem;
+  --text-10xl--line-height: 1.2;
+}

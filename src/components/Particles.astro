@@ -1,0 +1,40 @@
+<div id="tsparticles" class="absolute -z-10 size-full bg-black"></div>
+
+<script>
+  import { tsParticles } from '@tsparticles/engine'
+  import { loadSlim } from '@tsparticles/slim'
+
+  await loadSlim(tsParticles)
+
+  await tsParticles.load({
+    id: 'tsparticles',
+    options: {
+      interactivity: {
+        events: {
+          onHover: {
+            enable: true,
+            mode: 'repulse'
+          }
+        }
+      },
+      particles: {
+        links: {
+          enable: true
+        },
+        move: {
+          enable: true,
+          speed: 1
+        },
+        number: {
+          value: (window.innerWidth * window.innerHeight) / 13824
+        },
+        opacity: {
+          value: 0.5
+        },
+        size: {
+          value: 1
+        }
+      }
+    }
+  })
+</script>

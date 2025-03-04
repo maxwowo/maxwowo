@@ -1,0 +1,16 @@
+---
+interface Props {
+  url: string
+}
+
+const { url } = Astro.props
+---
+
+<a
+  class="mt-4 border-white transition duration-200 ease-in-out md:mt-6 md:hover:scale-150"
+  href={url}
+  rel="noreferrer"
+  target="_blank"
+>
+  <div class="size-9 text-white md:size-12"><slot /></div>
+</a>
