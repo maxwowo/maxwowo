@@ -1,6 +1,7 @@
 ---
 import '@/styles/global.css'
 import '@fontsource-variable/inter'
+import interWoff2 from '@fontsource-variable/inter/files/inter-latin-wght-normal.woff2?url'
 ---
 
 <!doctype html>
@@ -10,6 +11,13 @@ import '@fontsource-variable/inter'
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>¯\_(ツ)_/¯</title>
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href={interWoff2}
+      crossorigin="anonymous"
+    />
   </head>
   <body class="size-full">
     <slot />
