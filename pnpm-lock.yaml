@@ -25,7 +25,7 @@ importers:
         version: 5.4.3(@types/node@22.13.9)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.35.0)(typescript@5.8.2)(yaml@2.7.0)
       tailwindcss:
         specifier: ^4.0.9
-        version: 4.0.13
+        version: 4.0.14
     devDependencies:
       '@commitlint/cli':
         specifier: ^19.7.1
@@ -1938,9 +1938,6 @@ packages:
 
   suf-log@2.5.3:
     resolution: {integrity: sha512-KvC8OPjzdNOe+xQ4XWJV2whQA0aM1kGVczMQ8+dStAO6KfEB140JEVQ9dE76ONZ0/Ylf67ni4tILPJB41U0eow==}
-
-  tailwindcss@4.0.13:
-    resolution: {integrity: sha512-gbvFrB0fOsTv/OugXWi2PtflJ4S6/ctu6Mmn3bCftmLY/6xRsQVEJPgIIpABwpZ52DpONkCA3bEj5b54MHxF2Q==}
 
   tailwindcss@4.0.14:
     resolution: {integrity: sha512-92YT2dpt671tFiHH/e1ok9D987N9fHD5VWoly1CdPD/Cd1HMglvZwP3nx2yTj2lbXDAHt8QssZkxTLCCTNL+xw==}
@@ -4385,8 +4382,6 @@ snapshots:
   suf-log@2.5.3:
     dependencies:
       s.color: 0.0.15
-
-  tailwindcss@4.0.13: {}
 
   tailwindcss@4.0.14: {}
 
