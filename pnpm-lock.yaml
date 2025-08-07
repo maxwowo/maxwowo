@@ -16,7 +16,7 @@ importers:
         version: 4.1.11(vite@6.3.5(@types/node@24.2.0)(jiti@2.4.2)(lightningcss@1.30.1)(yaml@2.8.1))
       '@tsparticles/engine':
         specifier: ^3.8.1
-        version: 3.8.1
+        version: 3.9.1
       '@tsparticles/slim':
         specifier: ^3.8.1
         version: 3.8.1
@@ -688,6 +688,9 @@ packages:
 
   '@tsparticles/engine@3.8.1':
     resolution: {integrity: sha512-S8h10nuZfElY7oih//NUHnT5qf4v3/dnsU8CMs7dz5lBEGr3amrYrXk0V+YKPTIQwfdmJHUaSBoAqFiv4aEGIA==}
+
+  '@tsparticles/engine@3.9.1':
+    resolution: {integrity: sha512-DpdgAhWMZ3Eh2gyxik8FXS6BKZ8vyea+Eu5BC4epsahqTGY9V3JGGJcXC6lRJx6cPMAx1A0FaQAojPF3v6rkmQ==}
 
   '@tsparticles/interaction-external-attract@3.8.1':
     resolution: {integrity: sha512-GWzyj5MOzjb5pNWuqAueNZS2ilPcZ0isiqwcb0BjjpwfiGfL72UyIbNUDMLncsW+4jcwB4WyMsv/qOGDmAwVfQ==}
@@ -2899,6 +2902,8 @@ snapshots:
       '@tsparticles/updater-size': 3.8.1
 
   '@tsparticles/engine@3.8.1': {}
+
+  '@tsparticles/engine@3.9.1': {}
 
   '@tsparticles/interaction-external-attract@3.8.1':
     dependencies:
