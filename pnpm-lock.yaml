@@ -16,10 +16,10 @@ importers:
         version: 4.3.0(vite@7.3.3(@types/node@25.0.3)(jiti@2.7.0)(lightningcss@1.32.0)(yaml@2.9.0))
       '@tsparticles/engine':
         specifier: ^4.0.0
-        version: 4.0.1
+        version: 4.0.2
       '@tsparticles/slim':
         specifier: ^4.0.0
-        version: 4.0.1(@tsparticles/canvas-utils@4.0.1(@tsparticles/engine@4.0.1))
+        version: 4.0.1(@tsparticles/canvas-utils@4.0.1(@tsparticles/engine@4.0.2))
       astro:
         specifier: ^6.0.0
         version: 6.3.3(@types/node@25.0.3)(jiti@2.7.0)(lightningcss@1.32.0)(rollup@4.60.3)(yaml@2.9.0)
@@ -809,6 +809,9 @@ packages:
 
   '@tsparticles/engine@4.0.1':
     resolution: {integrity: sha512-QshPLBIaxt4kenOtyK6X8fFKYxP4gHLGVeNMMrHgvhZMZxbpRympon4j/GfoPMdoq0FDEmp8xhqaceL5UIUGAg==}
+
+  '@tsparticles/engine@4.0.2':
+    resolution: {integrity: sha512-B7xggalqpi2mu+rkPAV4abMrsqkdayYmeg78SHrOjJy6ApTMcWD0U2/zvxAFnc1U8EnsRBX8vIiTwBHdNZmp0A==}
 
   '@tsparticles/interaction-external-attract@4.0.1':
     resolution: {integrity: sha512-dTP7uaFzU/vNw/KnMTaMZ/UG8ixqtgkov6EjVETS7bkNzlKh4vV5A9DvZ/k7EfKBg/rfMRndeMGFZ4H1/3YSGQ==}
@@ -2914,11 +2917,13 @@ snapshots:
       '@tsparticles/updater-paint': 4.0.1(@tsparticles/engine@4.0.1)
       '@tsparticles/updater-size': 4.0.1(@tsparticles/engine@4.0.1)
 
-  '@tsparticles/canvas-utils@4.0.1(@tsparticles/engine@4.0.1)':
+  '@tsparticles/canvas-utils@4.0.1(@tsparticles/engine@4.0.2)':
     dependencies:
-      '@tsparticles/engine': 4.0.1
+      '@tsparticles/engine': 4.0.2
 
   '@tsparticles/engine@4.0.1': {}
+
+  '@tsparticles/engine@4.0.2': {}
 
   '@tsparticles/interaction-external-attract@4.0.1(@tsparticles/engine@4.0.1)(@tsparticles/plugin-interactivity@4.0.1(@tsparticles/engine@4.0.1))':
     dependencies:
@@ -2935,9 +2940,9 @@ snapshots:
       '@tsparticles/engine': 4.0.1
       '@tsparticles/plugin-interactivity': 4.0.1(@tsparticles/engine@4.0.1)
 
-  '@tsparticles/interaction-external-connect@4.0.1(@tsparticles/canvas-utils@4.0.1(@tsparticles/engine@4.0.1))(@tsparticles/engine@4.0.1)(@tsparticles/plugin-interactivity@4.0.1(@tsparticles/engine@4.0.1))':
+  '@tsparticles/interaction-external-connect@4.0.1(@tsparticles/canvas-utils@4.0.1(@tsparticles/engine@4.0.2))(@tsparticles/engine@4.0.1)(@tsparticles/plugin-interactivity@4.0.1(@tsparticles/engine@4.0.1))':
     dependencies:
-      '@tsparticles/canvas-utils': 4.0.1(@tsparticles/engine@4.0.1)
+      '@tsparticles/canvas-utils': 4.0.1(@tsparticles/engine@4.0.2)
       '@tsparticles/engine': 4.0.1
       '@tsparticles/plugin-interactivity': 4.0.1(@tsparticles/engine@4.0.1)
 
@@ -2946,9 +2951,9 @@ snapshots:
       '@tsparticles/engine': 4.0.1
       '@tsparticles/plugin-interactivity': 4.0.1(@tsparticles/engine@4.0.1)
 
-  '@tsparticles/interaction-external-grab@4.0.1(@tsparticles/canvas-utils@4.0.1(@tsparticles/engine@4.0.1))(@tsparticles/engine@4.0.1)(@tsparticles/plugin-interactivity@4.0.1(@tsparticles/engine@4.0.1))':
+  '@tsparticles/interaction-external-grab@4.0.1(@tsparticles/canvas-utils@4.0.1(@tsparticles/engine@4.0.2))(@tsparticles/engine@4.0.1)(@tsparticles/plugin-interactivity@4.0.1(@tsparticles/engine@4.0.1))':
     dependencies:
-      '@tsparticles/canvas-utils': 4.0.1(@tsparticles/engine@4.0.1)
+      '@tsparticles/canvas-utils': 4.0.1(@tsparticles/engine@4.0.2)
       '@tsparticles/engine': 4.0.1
       '@tsparticles/plugin-interactivity': 4.0.1(@tsparticles/engine@4.0.1)
 
@@ -2992,9 +2997,9 @@ snapshots:
       '@tsparticles/engine': 4.0.1
       '@tsparticles/plugin-interactivity': 4.0.1(@tsparticles/engine@4.0.1)
 
-  '@tsparticles/interaction-particles-links@4.0.1(@tsparticles/canvas-utils@4.0.1(@tsparticles/engine@4.0.1))(@tsparticles/engine@4.0.1)(@tsparticles/plugin-interactivity@4.0.1(@tsparticles/engine@4.0.1))':
+  '@tsparticles/interaction-particles-links@4.0.1(@tsparticles/canvas-utils@4.0.1(@tsparticles/engine@4.0.2))(@tsparticles/engine@4.0.1)(@tsparticles/plugin-interactivity@4.0.1(@tsparticles/engine@4.0.1))':
     dependencies:
-      '@tsparticles/canvas-utils': 4.0.1(@tsparticles/engine@4.0.1)
+      '@tsparticles/canvas-utils': 4.0.1(@tsparticles/engine@4.0.2)
       '@tsparticles/engine': 4.0.1
       '@tsparticles/plugin-interactivity': 4.0.1(@tsparticles/engine@4.0.1)
 
@@ -3026,9 +3031,9 @@ snapshots:
     dependencies:
       '@tsparticles/engine': 4.0.1
 
-  '@tsparticles/shape-emoji@4.0.1(@tsparticles/canvas-utils@4.0.1(@tsparticles/engine@4.0.1))(@tsparticles/engine@4.0.1)':
+  '@tsparticles/shape-emoji@4.0.1(@tsparticles/canvas-utils@4.0.1(@tsparticles/engine@4.0.2))(@tsparticles/engine@4.0.1)':
     dependencies:
-      '@tsparticles/canvas-utils': 4.0.1(@tsparticles/engine@4.0.1)
+      '@tsparticles/canvas-utils': 4.0.1(@tsparticles/engine@4.0.2)
       '@tsparticles/engine': 4.0.1
 
   '@tsparticles/shape-image@4.0.1(@tsparticles/engine@4.0.1)':
@@ -3051,16 +3056,16 @@ snapshots:
     dependencies:
       '@tsparticles/engine': 4.0.1
 
-  '@tsparticles/slim@4.0.1(@tsparticles/canvas-utils@4.0.1(@tsparticles/engine@4.0.1))':
+  '@tsparticles/slim@4.0.1(@tsparticles/canvas-utils@4.0.1(@tsparticles/engine@4.0.2))':
     dependencies:
       '@tsparticles/basic': 4.0.1
       '@tsparticles/engine': 4.0.1
       '@tsparticles/interaction-external-attract': 4.0.1(@tsparticles/engine@4.0.1)(@tsparticles/plugin-interactivity@4.0.1(@tsparticles/engine@4.0.1))
       '@tsparticles/interaction-external-bounce': 4.0.1(@tsparticles/engine@4.0.1)(@tsparticles/plugin-interactivity@4.0.1(@tsparticles/engine@4.0.1))
       '@tsparticles/interaction-external-bubble': 4.0.1(@tsparticles/engine@4.0.1)(@tsparticles/plugin-interactivity@4.0.1(@tsparticles/engine@4.0.1))
-      '@tsparticles/interaction-external-connect': 4.0.1(@tsparticles/canvas-utils@4.0.1(@tsparticles/engine@4.0.1))(@tsparticles/engine@4.0.1)(@tsparticles/plugin-interactivity@4.0.1(@tsparticles/engine@4.0.1))
+      '@tsparticles/interaction-external-connect': 4.0.1(@tsparticles/canvas-utils@4.0.1(@tsparticles/engine@4.0.2))(@tsparticles/engine@4.0.1)(@tsparticles/plugin-interactivity@4.0.1(@tsparticles/engine@4.0.1))
       '@tsparticles/interaction-external-destroy': 4.0.1(@tsparticles/engine@4.0.1)(@tsparticles/plugin-interactivity@4.0.1(@tsparticles/engine@4.0.1))
-      '@tsparticles/interaction-external-grab': 4.0.1(@tsparticles/canvas-utils@4.0.1(@tsparticles/engine@4.0.1))(@tsparticles/engine@4.0.1)(@tsparticles/plugin-interactivity@4.0.1(@tsparticles/engine@4.0.1))
+      '@tsparticles/interaction-external-grab': 4.0.1(@tsparticles/canvas-utils@4.0.1(@tsparticles/engine@4.0.2))(@tsparticles/engine@4.0.1)(@tsparticles/plugin-interactivity@4.0.1(@tsparticles/engine@4.0.1))
       '@tsparticles/interaction-external-parallax': 4.0.1(@tsparticles/engine@4.0.1)(@tsparticles/plugin-interactivity@4.0.1(@tsparticles/engine@4.0.1))
       '@tsparticles/interaction-external-pause': 4.0.1(@tsparticles/engine@4.0.1)(@tsparticles/plugin-interactivity@4.0.1(@tsparticles/engine@4.0.1))
       '@tsparticles/interaction-external-push': 4.0.1(@tsparticles/engine@4.0.1)(@tsparticles/plugin-interactivity@4.0.1(@tsparticles/engine@4.0.1))
@@ -3069,10 +3074,10 @@ snapshots:
       '@tsparticles/interaction-external-slow': 4.0.1(@tsparticles/engine@4.0.1)(@tsparticles/plugin-interactivity@4.0.1(@tsparticles/engine@4.0.1))
       '@tsparticles/interaction-particles-attract': 4.0.1(@tsparticles/engine@4.0.1)(@tsparticles/plugin-interactivity@4.0.1(@tsparticles/engine@4.0.1))
       '@tsparticles/interaction-particles-collisions': 4.0.1(@tsparticles/engine@4.0.1)(@tsparticles/plugin-interactivity@4.0.1(@tsparticles/engine@4.0.1))
-      '@tsparticles/interaction-particles-links': 4.0.1(@tsparticles/canvas-utils@4.0.1(@tsparticles/engine@4.0.1))(@tsparticles/engine@4.0.1)(@tsparticles/plugin-interactivity@4.0.1(@tsparticles/engine@4.0.1))
+      '@tsparticles/interaction-particles-links': 4.0.1(@tsparticles/canvas-utils@4.0.1(@tsparticles/engine@4.0.2))(@tsparticles/engine@4.0.1)(@tsparticles/plugin-interactivity@4.0.1(@tsparticles/engine@4.0.1))
       '@tsparticles/plugin-easing-quad': 4.0.1(@tsparticles/engine@4.0.1)
       '@tsparticles/plugin-interactivity': 4.0.1(@tsparticles/engine@4.0.1)
-      '@tsparticles/shape-emoji': 4.0.1(@tsparticles/canvas-utils@4.0.1(@tsparticles/engine@4.0.1))(@tsparticles/engine@4.0.1)
+      '@tsparticles/shape-emoji': 4.0.1(@tsparticles/canvas-utils@4.0.1(@tsparticles/engine@4.0.2))(@tsparticles/engine@4.0.1)
       '@tsparticles/shape-image': 4.0.1(@tsparticles/engine@4.0.1)
       '@tsparticles/shape-line': 4.0.1(@tsparticles/engine@4.0.1)
       '@tsparticles/shape-polygon': 4.0.1(@tsparticles/engine@4.0.1)
