@@ -25,7 +25,7 @@ importers:
         version: 7.0.9(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@types/node@25.9.1)(jiti@2.7.0)(rollup@4.62.2)(yaml@2.9.0)
       tailwindcss:
         specifier: ^4.1.8
-        version: 4.3.2
+        version: 4.3.3
     devDependencies:
       '@commitlint/cli':
         specifier: ^21.0.0
@@ -2047,9 +2047,6 @@ packages:
     resolution: {integrity: sha512-ekx94z1rRc5LDi6oSUaeRnYhd0UOJxdtQCL2rF8xpWxD3TPAsISWOrxezqGovqS38GRZOdpDfvQe3ts6F7nsng==}
     engines: {node: '>=16'}
     hasBin: true
-
-  tailwindcss@4.3.2:
-    resolution: {integrity: sha512-WtctNNSH8A9jlMIqxzuYumOHU5uGZyRv0Q5svQl+oEPy5w84YpBxdb7MdqyiSPQge5jTJ6zFQLq0PFygdccSBA==}
 
   tailwindcss@4.3.3:
     resolution: {integrity: sha512-gOhV3P7ufE62QDGg1zVaTgCR+EtPv92k2nIhVcVKcLmxT1sUBsQGhnZj175j+MqRt4zLF7ic+sCYjfhxMxj7YQ==}
@@ -4176,8 +4173,6 @@ snapshots:
       csso: 5.0.5
       picocolors: 1.1.1
       sax: 1.6.0
-
-  tailwindcss@4.3.2: {}
 
   tailwindcss@4.3.3: {}
 
